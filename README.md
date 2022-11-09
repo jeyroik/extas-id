@@ -27,5 +27,6 @@ class My implements IHaveStringId
 
 $my = new My();
 
-echo UUID::setId($my, 4); // something like 0a961099-fd10-4f89-a128-2ae7c8ae5fef
+UUID::setId($my, 4); 
+echo $my->getId();// something like 0a961099-fd10-4f89-a128-2ae7c8ae5fef
 ```
